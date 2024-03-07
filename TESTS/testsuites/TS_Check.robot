@@ -10,12 +10,14 @@ Test Teardown       Framework.testTeardown
 ${TIMEOUT}                                    5 seconds
 ${RETRY}                                      1s
 
+#BITBAR variables
 ${NAME}                                       Nicolas
 ${RIGHT_ANSWER}                               You are right!
 ${RIGHT_ANSWER_DETAILED}                      Congratulations ${NAME}!
 ${WRONG_ANSWER}                               Wrong Answer!
 ${WRONG_ANSWER_DETAILED}                      Haven't you heard about Testdroid Cloud?
 
+#API variables
 ${TEXT}                                       (And all inside of a ScrollView!)
 
 #BITBAR Locators
@@ -33,6 +35,14 @@ ${LOCATOR_ACCEPT_ANDROID}                     //*[@resource-id="android:id/butto
 ${LOCATOR_VIEWS_API}                          //*[@content-desc="Views"]
 ${LOCATOR_CONTROLS_API}                       //*[@content-desc="Controls"]
 ${LOCATOR_THEME_API}                          //*[@content-desc="2. Dark Theme"]
+
+${LOCATOR_CHECKBOX_API_1}                     //*[@content-desc="Checkbox 1"]
+${LOCATOR_CHECKBOX_API_2}                     //*[@content-desc="Checkbox 2"]
+${LOCATOR_RADIO_API}                          //*[@content-desc="RadioButton 1"]
+${LOCATOR_TOGGLE_API_1}                       //*[@resource-id="io.appium.android.apis:id/toggle1"]
+${LOCATOR_TOGGLE_API_2}                       //*[@resource-id="io.appium.android.apis:id/toggle2"]
+${LOCATOR_SPINNER_API}                         //*[@resource-id="io.appium.android.apis:id/spinner1"]
+${LOCATOR_URANUS_API}                         //*[@resource-id="android:id/text1" and @text="Uranus"]
 
 ${LOCATOR_START_SCROLL_API}                   //*[@resource-id="io.appium.android.apis:id/edit"]
 ${LOCATOR_END_SCROLL_API}                     //*[@content-desc="textColorPrimary"]
@@ -131,6 +141,16 @@ Test Case API DEMO
 
     #desactivate keyboard
     AppiumLibrary.Hide Keyboard
+
+    #activate all the stuff
+    AppiumLibrary.Click Element    ${LOCATOR_CHECKBOX_API_1}
+    AppiumLibrary.Click Element    ${LOCATOR_CHECKBOX_API_2}
+    AppiumLibrary.Click Element    ${LOCATOR_RADIO_API}
+    AppiumLibrary.Click Element    ${LOCATOR_TOGGLE_API_1}
+    AppiumLibrary.Click Element    ${LOCATOR_TOGGLE_API_2}
+    AppiumLibrary.Click Element    ${LOCATOR_SPINNER_API}
+    AppiumLibrary.Wait Until Page Contains Element    ${LOCATOR_URANUS_API}
+    AppiumLibrary.Click Element    ${LOCATOR_URANUS_API}
 
     #scroll to text
     AppiumLibrary.Scroll    ${LOCATOR_END_SCROLL_API}    ${LOCATOR_START_SCROLL_API}
