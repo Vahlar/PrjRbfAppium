@@ -41,7 +41,7 @@ ${LOCATOR_CHECKBOX_API_2}                     //*[@content-desc="Checkbox 2"]
 ${LOCATOR_RADIO_API}                          //*[@content-desc="RadioButton 1"]
 ${LOCATOR_TOGGLE_API_1}                       //*[@resource-id="io.appium.android.apis:id/toggle1"]
 ${LOCATOR_TOGGLE_API_2}                       //*[@resource-id="io.appium.android.apis:id/toggle2"]
-${LOCATOR_SPINNER_API}                         //*[@resource-id="io.appium.android.apis:id/spinner1"]
+${LOCATOR_SPINNER_API}                        //*[@resource-id="io.appium.android.apis:id/spinner1"]
 ${LOCATOR_URANUS_API}                         //*[@resource-id="android:id/text1" and @text="Uranus"]
 
 ${LOCATOR_START_SCROLL_API}                   //*[@resource-id="io.appium.android.apis:id/edit"]
