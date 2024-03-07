@@ -1,0 +1,10 @@
+# tout ignorer
+/*
+# ne pas ignorer
+!.gitignore
+!README.md
+!requirements*
+!/SOCLE
+!/TESTS
+# ignorer quand meme
+**/__pycache__/*
