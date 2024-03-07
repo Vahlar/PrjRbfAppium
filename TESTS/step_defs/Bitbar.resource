@@ -1,7 +1,6 @@
 *** Settings ***
 
 Resource            %{PROJECT_FOLDER}/SOCLE/Framework.resource
-Library    RPA.HTTP
 
 *** Variables ***
 

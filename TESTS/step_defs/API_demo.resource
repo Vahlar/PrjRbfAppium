@@ -1,4 +1,5 @@
 *** Settings ***
+
 Resource            %{PROJECT_FOLDER}/SOCLE/Framework.resource
 
 *** Variables ***
